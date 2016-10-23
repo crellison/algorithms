@@ -20,5 +20,14 @@ class TestNodeClass(unittest.TestCase):
         testNode.setHead(20)
         self.assertEqual(testNode.getHead(), 20)
 
+    def testDeleters(self):
+        testNode = Node(10)
+        testNode.setTail(20)
+        print(testNode.toString())
+        testNode.amputateTail()
+        self.assertIsNone(testNode.getTail())
+        testNode.decapitate()
+        self.assertIsNone(testNode.getHead())
+
 if __name__ == '__main__':
     unittest.main()
