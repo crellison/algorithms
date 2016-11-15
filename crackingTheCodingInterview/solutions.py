@@ -4,8 +4,17 @@
 # 1.1 Implement an algorithm to determine if a string has all unique characters 
 # What if you can not use additional data structures?
 
+def uniqueChars(str):
+  seen = ''
+  for let in str:
+    if seen.find(let) != -1:
+      return False
+    seen+=let
+  return True
+
 # 1.2 Write code to reverse a C-Style String 
-# (C-String means that “abcd” is represented as  ve characters, including the null character )
+# (C-String means that “abcd” is represented as five characters, including the null character )
+
 
 # 1.6 Given an image represented by an NxN matrix, where each pixel in the image is 4 bytes, 
 # write a method to rotate the image by 90 degrees Can you do this in place?
