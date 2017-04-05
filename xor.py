@@ -21,6 +21,7 @@ def xor(a,b):
 def printUsage():
 	print('\n***')
 	print('File takes two integer arguments to use as variables')
+	print('The purpose of this is to show how to swap variable \nvalues without using a temp var')
 	print('Run again as: python3 xor.py <var1> <var2>')
 	print('***\n')
 
