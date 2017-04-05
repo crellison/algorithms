@@ -15,6 +15,8 @@ def uniqueChars(str):
 # 1.2 Write code to reverse a C-Style String 
 # (C-String means that “abcd” is represented as five characters, including the null character )
 
+string = 'dsafasdf'
+reverse = string[::-1]
 
 # 1.6 Given an image represented by an NxN matrix, where each pixel in the image is 4 bytes, 
 # write a method to rotate the image by 90 degrees Can you do this in place?
